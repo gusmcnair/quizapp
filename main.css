@@ -50,31 +50,18 @@ table {
 /*Code for quiz app specifically is here*/
 
 main {
-    width: 500px;
-    max-width: 80%;
     margin: 0 auto;
     margin-top: 50px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid black;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;    
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
 }
 
 p {
     line-height: 1.2rem;
-}
-
-legend {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    padding-bottom: 20px;
-    text-align: center;
-    width: 100%;
 }
 
 h1 {
@@ -82,30 +69,56 @@ h1 {
     line-height: 3rem;
     text-align: center;
     padding-bottom: 10px;
-}
-
-form {
-    margin: 10px;
-}
-
-label {
-    padding-left: 10px;
-    line-height: 1.2rem;
-}
-
-.question-score{
-    padding-left: 50px;
-}
-
-.options {
-    padding-bottom: 20px;
+    font-family: 'Bree Serif', sans-serif;
+    color: darkslategray;
 }
 
 h2 {
     font-size: 1.3rem;
     line-height: 1.7rem;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    font-family: 'Bree Serif', sans-serif;
+}
+
+h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    font-family: 'Bree Serif', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    text-shadow: -1px -1px 2px black;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    margin: 10px;
+}
+
+legend {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+label, p {
+    padding-left: 10px;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.first{
+    display: block;
+}
+
+.options {
+    padding-bottom: 20px;
 }
 
 .buttondiv {
@@ -117,14 +130,95 @@ button {
     padding: 10px;
     border: 0;
     width: 200px;
-    font-size: 1rem;
-    background-color: lightgray;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', sans-serif;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 5px;
 }
 
 .headergraphic {
     height: 200px;
-    background-color: lightgray;
-    margin: 20px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
+.img-container {
+    margin: 20px;
+    position: relative;
+}
+
+.end-graphic {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.start-screen {
+    display: block;
+}
+
+.questions-screen {
+    display: none;
+}
+
+.end-screen {
+    display: none;
+}
+
+.submit-button {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.next-button {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.results {
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+.wrong-answer {
+    color: darkred;
+}
+
+.right-answer {
+    color:darkslategray;
+}
+
+.header-graphic {
+}
+
+/* For display on medium-to-large screens */
+@media only screen and (min-width: 550px){
+    main {
+        width: 450px;
+        max-width: 80%;
+        min-height: 540px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        font-family: 'Raleway', sans-serif;    ;
+        box-shadow: 3px 3px 8px black;
+    }
+
+    .first{
+        display: inline;
+        padding-right: 50px;
+    }
+    
+    body {
+        background-image: url("assets/lbjbook2.jpg");
+        background-size: cover;
+        background-position: center;
+    }  
+}
