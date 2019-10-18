@@ -6,26 +6,79 @@
     <meta description="A simple quiz about Lyndon B. Johnson, America's loudest president.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <main>
-        <h1>Lyndon B. Johnson: The Quiz</h1>
-        <section class="primary-content">
-            <form class="horse-urinal-form">
+        <header role="banner">
+            <h1>Lyndon B. Johnson: The Quiz</h1>
+        </header>
+
+        <section class="start-screen">
+            <div class="img-container">
+                <img class="headergraphic" src="assets/President-Johnson-Turkey.jpg"
+                    alt="President Johnson and a turkey">
+            </div>
+            <form class="form-main">
                 <fieldset>
-                    <legend>What did Lyndon B. Johnson call his trademark set of domestic programs?</legend>
+                    <legend>How much do you know about Lyndon B. Johnson, America's angriest president, the man who ate
+                        an entire rack of ribs every day for breakfast and who Hubert Humphrey once accidentally called
+                        "Dad"? Take our quiz to find out!</legend>
                     <p>
-                    <div class="options"><input type="radio" name="options" id="option1"><label for="option1">The New New Deal</label></div>
-                    <div class="options"><input type="radio" name="options" id="option2"><label for="option2">The Great Society</label></div>
-                    <div class="options"><input type="radio" name="options" id="option3"><label for="option3">Big Lyndy Presents: Jobs-A-Plenty</label></div>
-                    <div class="options"><input type="radio" name="options" id="option4"><label for="option4">A Chimp In Every Home, And That Chimp's Name Is Jeffrey</label></div>
-                    <div class="buttondiv"><button type="submit" name="submit" id="submit1">Submit</button></div>
+                        <div class="buttondiv"><button type="submit" name="submit" id="start-button">Start the
+                                Quiz!</button>
+                        </div>
                     </p>
                 </fieldset>
-                </form>
-                <h2><span class=question-number>Question # X</span><span class=question-score>X/10</h2></span>
+            </form>
         </section>
+
+        <section class="questions-screen">
+            <h2>Question # <span class="question-number"> </span><span class="first">&nbsp;out of &nbsp;10</span>
+                Current score: &nbsp; <span class="question-score">0</span></h2>
+            <form class="form-main">
+                <fieldset>
+                    <legend></legend>
+                    <p>
+                        <div class="options"><input type="radio" name="options" id="option1"><label
+                                for="option1"></label></div>
+                        <div class="options"><input type="radio" name="options" id="option2"><label
+                                for="option2"></label></div>
+                        <div class="options"><input type="radio" name="options" id="option3"><label
+                                for="option3"></label></div>
+                        <div class="options"><input type="radio" name="options" id="option4"><label
+                                for="option4"></label></div>
+                        <div class="submit-button"><button type="submit" name="submit" id="submit1">Submit</button>
+                        </div>
+                        <div class="next-button"><button type="submit" name="submit" id="next1">Next question!</button>
+                        </div>
+                    </p>
+                </fieldset>
+            </form>
+            <article class="results"></article>
+        </section>
+
+        <section class="end-screen">
+            <div class="img-container">
+                <img class="end-graphic" src="" alt="">
+                <h3></h3>
+            </div>
+            <form class="form-main">
+                <fieldset>
+                    <legend></legend>
+                    <p class="resultsText"></p>
+                    <div class="buttondiv"><button type="submit" name="retake" id="retake">Retake the Quiz!</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
     </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
