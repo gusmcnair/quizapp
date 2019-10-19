@@ -84,6 +84,7 @@ function loadNewQuestion() {
     }
     else {
         $("input[name='options']:checked").prop("checked", false);
+        $("input#option1").prop("checked", true);
         $(".question-number").text(questionNumber + 1);
         $(".questions-screen").hide();
         $(".questions-screen").fadeIn(1000);

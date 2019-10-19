@@ -193,7 +193,8 @@ button {
     color:darkslategray;
 }
 
-.header-graphic {
+input {
+    cursor: pointer;
 }
 
 /* For display on medium-to-large screens */
